@@ -119,4 +119,59 @@ hr.divider {
   align-self: center;
 }
 
+#header {
+  min-width: 320px;
+  width: 100%;
+  background-color: var(--gray-5);
+  position: relative;
+  z-index: 3;
+}
+#header .italy {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  background-color: var(--white);
+  border-top: 6px solid var(--green);
+  border-bottom: 6px solid var(--red);
+  height: 18px;
+}
+#header .menu {
+  transition: right 0.5s ease-in-out;
+  width: 300px;
+  height: 100vh;
+  padding-bottom: 50px;
+  background-color: var(--gray-7);
+  position: fixed;
+  right: -300px;
+  top: 0;
+  z-index: 4;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#header .menu nav {
+  flex-direction: column;
+}
+#header .menu nav ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 249px;
+  width: 100%;
+  flex-direction: column;
+}
+#header .menu nav ul li {
+  padding: 14px 0;
+  list-style: none;
+  justify-content: center;
+}
+#header .menu nav ul li a {
+  text-decoration: none;
+  color: var(--gray-0);
+}
+#header .menu nav ul li.hide-guest, #header .menu nav ul li.divider {
+  display: none;
+}
+#header .menu nav ul li hr {
+  margin: 15px 0;
+}
+
 /*# sourceMappingURL=main.css.map */
